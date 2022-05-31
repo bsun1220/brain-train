@@ -1,0 +1,75 @@
+
+.reaction_game{
+    color:white;
+    font-family:Arial;
+    font-size: 100px;
+    width:100%;
+    height:70vh;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+}
+
+.click_page{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100%;
+    width:100%;
+}
+.click_page h1{
+    font-size:50px;
+    width:100%;
+}
+
+.click_page p{
+    font-size:large;
+    width:100%;
+}
+
+#vertical_space{
+    padding-bottom:25px;
+}
+
+#green_page{
+    background-color:rgb(26, 221, 26);
+}
+
+#red_page{
+    background-color:rgb(216, 62, 62);
+}
+
+#blue_page{
+    background-color:rgb(40, 134, 196);
+}
+
+#play_buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-top:40px;
+}
+
+.end_button{
+    font-size:large;
+    color:gray;
+    background-color:gold;
+    border:none;
+    padding:25px;
+    margin-left:20px;
+    margin-right:20px;
+    border-radius:5px;
+    transition:0.5s;
+}
+
+.end_button:hover{
+    background-color:orange;
+    color:white;
+    cursor:pointer;
+    transition:0.5s;
+}
+
+#center{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
