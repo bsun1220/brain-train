@@ -90,11 +90,20 @@ button:focus{
     display:flex;
     align-items:center;
     justify-content:center;
+    margin-bottom:20px;
 }
 
 .button{
     border:none;
     border-radius:5px;
+}
+
+#start{
+    width:150px;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 #big_text{
@@ -127,4 +136,86 @@ footer p{
 #line{
     margin-top:0;
     height:2px;
+}
+
+
+#cardimg{
+    width:50px;
+}
+
+#cardbody{
+    text-align:center;
+    padding-top:70px;
+    padding-bottom:50px;
+    font-size:20px;
+    color:black;
+}
+
+#cardtitle{
+    margin:10px;
+    font-weight: bolder;
+    font-size:35px;
+    color:black;
+}
+
+#card{
+    transition: transform 0.1s ease-out;
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:40px;
+}
+
+#card:hover{
+    transform:translateY(-10px);
+    text-decoration: none;
+    color:pink;
+}
+
+.dashboard{
+    padding-top:50px;
+    padding-left:10vw;
+    padding-right:10vw;
+    padding-bottom:50px;
+    background-color: #5D47C7;
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+#frontpage{
+    height:70vh;
+    color:white;
+    font-family:Arial;
+    width:100%;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    background-color:rgb(40, 134, 196);
+    font-weight: bolder;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+#frontpage h1{
+    font-size:75px;
+}
+
+#frontpage p{
+    font-size:25px;
+    text-align:center;
+    font-weight:lighter;
+    padding-bottom:60px;
+}
+
+#middlepage{
+    height:50vh;
+    width:100%;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    background-color:lightgray;
+}
+
+html{
+    scroll-behavior: smooth;
 }

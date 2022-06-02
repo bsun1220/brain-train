@@ -4,6 +4,7 @@ import Header from "./components/header"
 // We use Route in order to define the different routes of our application
 import { Route, Routes } from "react-router-dom";
 import Footer from "./components/footer";
+import Dashboard from "./components/dashboard"
 
 // We import all the components we need in our ap
 
@@ -12,7 +13,9 @@ const App = () => {
    <div>
         <Header />
         <Routes>
+        <Route exact path = "/" element = {<Dashboard/>}/>
           <Route path = "/click" element = {<Click/>}/>
+          
         </Routes>
         <Footer />
    </div>
