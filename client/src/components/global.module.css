@@ -4,9 +4,18 @@
     font-family:Arial;
     font-size: 100px;
     width:100%;
-    height:70vh;
+    height:85vh;
     margin:0px 0px 0px 0px;
     padding:0px 0px 0px 0px;
+}
+
+button{
+    border:none;
+}
+
+button:focus{
+    border:none;
+    outline:none;
 }
 
 .click_page{
@@ -15,7 +24,9 @@
     justify-content:center;
     height:100%;
     width:100%;
+    cursor:pointer;
 }
+
 .click_page h1{
     font-size:50px;
     width:100%;
@@ -26,8 +37,14 @@
     width:100%;
 }
 
+.click_page button:focus{
+    outline:none;
+    border:none;
+}
+
 #vertical_space{
-    padding-bottom:25px;
+    padding-top:5px;
+    padding-bottom:15px;
 }
 
 #green_page{
@@ -40,6 +57,7 @@
 
 #blue_page{
     background-color:rgb(40, 134, 196);
+    text-align:center;
 }
 
 #play_buttons{
@@ -72,4 +90,41 @@
     display:flex;
     align-items:center;
     justify-content:center;
+}
+
+.button{
+    border:none;
+    border-radius:5px;
+}
+
+#big_text{
+    font-size:90px;
+
+}
+
+.left{
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+}
+
+#yep{
+    padding-left:20px;
+    padding-right:20px;
+}
+
+footer{
+    margin-top:0;
+    padding-top:0;
+    text-align:right;
+    justify-content:center;
+}
+
+footer p{
+    padding-right:15px;
+}
+
+#line{
+    margin-top:0;
+    height:2px;
 }

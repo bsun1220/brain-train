@@ -1,16 +1,16 @@
 import React, { useState, useEffect, useReducer} from "react";
 import styles from "./global.module.css";
-import Green_Page from "./green-page";
-import Red_Page from "./red-page"
-import Start_Page from "./start-page"
-import Blue_Page from "./blue-page";
-import End_Page from "./end-page";
+import GreenPage from "./green-page";
+import RedPage from "./red-page"
+import StartPage from "./start-page"
+import BluePage from "./blue-page";
+import EndPage from "./end-page";
 
 export default function Click(){
 
     const [outcome, setOutcome] = useState({
         "page":"start",
-        is_red: false,
+        "is_red": false,
         "greenStart":0
     })
     
@@ -21,11 +21,11 @@ export default function Click(){
     );
 
     const ref = {
-        "start":<Start_Page />,
-        "red":<Red_Page/>,
-        "blue":<Blue_Page/>,
-        "score":<Blue_Page correct = {true} time = {scores.slice(-1)[0]}/>,
-        "green":<Green_Page/>
+        "start":<StartPage />,
+        "red":<RedPage/>,
+        "blue":<BluePage/>,
+        "score":<BluePage correct = {true} time = {scores.slice(-1)[0]}/>,
+        "green":<GreenPage/>
     };
 
     const random_timer = () => Math.random() * 5000 + 2000;
@@ -33,57 +33,50 @@ export default function Click(){
     let current = outcome["page"];
 
     useEffect(() => {
-        if(outcome["page"] == "red"){
+        if(outcome["page"] === "red"){
             const timer = setTimeout(() =>{
-                if(current == "red"){
+                if(current === "red"){
                     setOutcome((val) =>{
-                        return {...val,...{"page":"green", is_red:false, greenStart:Date.now()}};
+                        return {...val,...{"page":"green", "is_red":false, greenStart:Date.now()}};
                     });
-                    current = "green";
                 }
             }, random_timer());
             return () => clearTimeout(timer);
         }
-      }, [outcome["is_red"]]);
+      }, [outcome, current]);
 
     const handleClick = (e) => {
         e.preventDefault();
-        if(outcome["page"] == "start"){
+        if(outcome["page"] === "start"){
             setOutcome((val) => {
-                return {...val,... {"page":"red", is_red:true}}
+                return {...val,...{"page":"red", "is_red":true}}
             });
-            current = "red";
         }
-        if(outcome["page"] == "red"){
+        if(outcome["page"] === "red"){
             setOutcome((val) => {
-                return {...val,... {"page":"blue", is_red:false}}
+                return {...val,...{"page":"blue", "is_red":false}}
             });
-            current = "blue";
         }
-        if(outcome["page"] == "blue"){
+        if(outcome["page"] === "blue"){
             setOutcome((val) => {
-                return {...val,... {"page":"red", is_red:true}}
+                return {...val,...{"page":"red", "is_red":true}}
             });
-            current = "red";
         }
-        if(outcome["page"] == "green"){
+        if(outcome["page"] === "green"){
         
             setOutcome((val) => {
-                return {...val,... {"page":"score", is_red:false}}
+                return {...val,...{"page":"score", "is_red":false}}
             });
             setScore((oldArray) => [...oldArray, Date.now() - outcome["greenStart"]]);
-            current = "blue";
         }
 
-        if (outcome["page"] == "score"){
+        if (outcome["page"] === "score"){
             setOutcome((val) => {
-                return {...val,... {"page":"red", is_red:true}}
+                return {...val,...{"page":"red", "is_red":true}}
             });
-            current = "red";
             addRound();
         }
     }
-
 
     if (round <= 5){
         return(
@@ -94,7 +87,7 @@ export default function Click(){
     else{
         return(
             <div className = {styles.reaction_game}>
-                <End_Page data = {scores}/>
+                <EndPage data = {scores}/>
             </div>
         )
     }

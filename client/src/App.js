@@ -1,15 +1,20 @@
 import React from "react";
 import Click from "./components/click_game"
-
+import Header from "./components/header"
 // We use Route in order to define the different routes of our application
 import { Route, Routes } from "react-router-dom";
- 
-// We import all the components we need in our app
- 
+import Footer from "./components/footer";
+
+// We import all the components we need in our ap
+
 const App = () => {
  return (
    <div>
-     <Click/>
+        <Header />
+        <Routes>
+          <Route path = "/click" element = {<Click/>}/>
+        </Routes>
+        <Footer />
    </div>
  );
 };

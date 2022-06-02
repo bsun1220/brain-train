@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./global.module.css";
 
-export default function End_Page(props){
+export default function EndPage(props){
 
     const get_avg = () => Math.floor(props.data.reduce((a,b) => a + b, 0)/props.data.length);
 
@@ -10,7 +10,7 @@ export default function End_Page(props){
 
             <div background-color = "yellow">
                 <div id = {styles.center}>
-                    <img id = {styles.smiley} src = "smiley.png" width = "100px"/>
+                    <img id = {styles.smiley} src = "smiley.png" width = "100px" alt = "smiley"/>
                 </div>
                 <h1> Your average was {get_avg()} ms!</h1>
             <div id = {styles.play_buttons}>
