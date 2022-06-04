@@ -19,8 +19,8 @@ export default function Dashboard(){
         <div id = {styles.middlepage}/>
 
         <div className = {styles.dashboard} id = "game-page">
-            <Info img = "time-purple.svg" name = "TimeIt!" desc = "Click to survive!" link = "/click"/>
-            <Info img = "time-purple.svg" name = "TimeIt!" desc = "Click to survive!" link = "/click"/>
+            <Info img = "time-purple.svg" name = "TimeIt!" desc = "Click to survive" link = "/click"/>
+            <Info img = "memory-purple.svg" name = "MemorizeIt!" desc = "Remember the numbers" link = "/memory"/>
             <Info img = "time-purple.svg" name = "TimeIt!" desc = "Click to survive!" link = "/click"/>
         </div>
         </div>
