@@ -1,4 +1,4 @@
-.reaction_game{
+.game{
     color:white;
     font-family:Arial;
     font-size: 100px;
@@ -225,6 +225,7 @@ html{
     height:85vh;
     margin:0px 0px 0px 0px;
     padding:0px 0px 0px 0px;
+    width:100vw;
     font-family:Arial;
     display:flex;
     justify-content:center;
@@ -278,4 +279,41 @@ html{
 
 #memLev{
     padding-top:15px;
+}
+
+.form{
+    display:flex;
+    margin-top:25px;
+    margin-bottom:25px;
+    width:60vw;
+    height:70px;
+}
+
+.formtext{
+    padding:4px;
+    font-size:50px;
+    text-align:center;
+    width:100%;
+    color:white;
+    background-color:#2560a0;
+    border-radius:10px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.2)
+}
+
+.formtext:focus{
+    outline:none;
+}
+
+#memorysubmit{
+    font-size:30px;
+    margin:0px;
+    padding:0px;
+}
+
+#memorysubmitgray{
+    opacity:0.5;
+    padding:0px;
+    margin:0px;
+
 }

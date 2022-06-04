@@ -80,7 +80,7 @@ export default function Click(){
 
     if (round <= 5){
         return(
-            <button className = {styles.reaction_game} onClick = {handleClick}>
+            <button className = {styles.game} onClick = {handleClick}>
                 {ref[outcome["page"]]}
             </button>);
     }

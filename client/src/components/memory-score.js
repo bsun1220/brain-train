@@ -4,9 +4,11 @@ import styles from "./global.module.css";
 
 export default function Score(props){
 
-    const {actualNum, guessNum, level} = props;
+    const {actualNum, guessNum} = props;
 
     const correct = actualNum === guessNum;
+
+    const level = actualNum.length;
 
     const corrStyle = correct ? styles.memoryCorrect : styles.memoryIncorrect;
 
