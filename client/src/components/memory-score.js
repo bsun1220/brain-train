@@ -17,8 +17,25 @@ export default function Score(props){
         <button className = {styles.end_button}> Play Again</button>
     </div>;
 
+
+    const handleNext = (e) => {
+        e.preventDefault();
+        if(level === 80){
+            props.setPage("max");
+        }
+        props.addRound();
+        props.changeNum(()=>{
+            return props.createNum(level + 1)
+        });
+        props.setPage("number");
+    };
+
     const playNext = <div id = {styles.play_buttons}>
-        <button className = {styles.end_button} id = {styles.start}> Next </button>
+        <button 
+            className = {styles.end_button} 
+            id = {styles.start}
+            onClick = {handleNext}
+            >Next </button>
     </div>;
 
     const button = correct ? playNext : playAgain;

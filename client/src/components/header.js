@@ -7,7 +7,7 @@ export default function Header() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light">
           <NavLink className="navbar-brand" to="/" id = {styles.left}>
-          <img style={{"width" : 30 + '%'}} src="BrainTrain.png"></img>
+          <img style={{"width" : 30 + '%'}} src="BrainTrain.png" alt = "brains"></img>
           </NavLink>
           <button
             className="navbar-toggler"

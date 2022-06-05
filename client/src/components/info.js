@@ -20,7 +20,7 @@ export default function Info(props){
         <Card style={{ width: "20rem" }} id = {styles.card}>
         <a href= {props.link} style = {{"text-decoration": "none"}}>
         <Card.Body id = {styles.cardbody}>
-         <Card.Img src = {props.img} alt = "logo" id = {styles.cardimg}/>
+         <img src = {props.img} alt = "logo" id = {styles.cardimg}/>
           <Card.Title  id = {styles.cardtitle}>{props.name}</Card.Title>
           <Card.Text id = {styles.body}>
               {props.desc}

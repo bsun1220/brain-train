@@ -3,7 +3,7 @@ import styles from "./global.module.css";
 
 export default function Start({parentCall}){
 
-    const start = false;
+    const start = "number";
 
     const handleClick = (e) => {
         e.preventDefault();

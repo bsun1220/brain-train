@@ -1,7 +1,26 @@
-import React from "react";
+import React, {useEffect, useReducer} from "react";
 import styles from "./global.module.css";
 
 export default function Number(props){
+    
+    const update_inc = 20/(7 * props.guessNum.length);
+    
+    const [time, reduceTime] = useReducer(
+        (number) => number - update_inc,
+        100
+    );
+
+    useEffect(() => {
+        const timer = setTimeout(() =>{
+            if(time <= 20){
+                props.parentCall("submit");
+            }
+            else{
+                reduceTime();
+            }
+        }, 25);
+        return () => clearTimeout(timer);
+    }, [time, props]);
 
     const containerStyles = {
         height: 30,
@@ -13,7 +32,7 @@ export default function Number(props){
     
     const fillerStyles = {
         height: '100%',
-        width: `${props.completed}%`,
+        width: `${time}%`,
         backgroundColor: "white",
         borderRadius: 'inherit',
         textAlign: 'right'
@@ -25,10 +44,11 @@ export default function Number(props){
         fontWeight: 'bold'
     }
 
+
     return(
         <div className = {styles.memorypage}> 
             <div id = {styles.guessNum}>
-                <h1>{props.num}</h1>
+                <h1>{props.guessNum}</h1>
             </div>
             <div style = {containerStyles}>
                 <div style = {fillerStyles}>

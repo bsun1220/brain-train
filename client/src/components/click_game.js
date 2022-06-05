@@ -86,7 +86,7 @@ export default function Click(){
     }
     else{
         return(
-            <div className = {styles.reaction_game}>
+            <div className = {styles.game}>
                 <EndPage data = {scores}/>
             </div>
         )

@@ -170,12 +170,17 @@ footer p{
     color:pink;
 }
 
+#card:hover{
+    filter:invert(0%) sepia(50%) saturate(100%) hue-rotate(50deg) brightness(180%);
+    text-decoration:none;
+}
+
 .dashboard{
     padding-top:50px;
     padding-left:10vw;
     padding-right:10vw;
     padding-bottom:50px;
-    background-color: #5D47C7;
+    background-color: #5d47c7;
     display:flex;
     justify-content: center;
     flex-wrap:wrap;
