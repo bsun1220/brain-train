@@ -252,6 +252,12 @@ html{
     width:60vw;
     display:inline-block;
     word-wrap:break-word;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  
 }
 
 #guessNum h1{
@@ -321,4 +327,85 @@ html{
     padding:0px;
     margin:0px;
 
+}
+
+.mathpage{
+    background-color:#5d47c7;
+    color:white;
+    height:85vh;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    width:100vw;
+    font-family:Arial;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+}
+
+.mathpage p{
+    font-size:20px;
+}
+
+.mathpage h1{
+    font-size:50px;
+}
+
+#mathround{
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    flex-direction:column;
+}
+
+#mathheader{
+    width:100%;
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    padding: 2vh 3vw 2vh 3vw;
+}
+
+#matheq{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:60%;
+    width:100%;
+}
+
+#stripe{
+    height:15vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:#f2aeb1;
+    flex-direction: row;
+}
+
+#mathtxt{
+    padding: 0px;
+    margin: 0px;
+    margin-right:30px;
+    color:rgb(24, 21, 28);
+    font-size:40px;
+    font-weight:bold;
+}
+
+#mathform{
+    height:44px;
+}
+
+#mathformtxt{
+    height:100%;
+    font-size:40px;
+    width:10vw;
+    font-weight:bold;
+    border:none;
+    border-radius:5px;
+}
+#mathformtxt:focus{
+    outline:none;
 }

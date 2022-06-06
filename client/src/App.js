@@ -6,6 +6,7 @@ import Memory from"./components/memory_game"
 import { Route, Routes } from "react-router-dom";
 import Footer from "./components/footer";
 import Dashboard from "./components/dashboard"
+import MathGame from "./components/math_game"
 
 // We import all the components we need in our ap
 
@@ -17,6 +18,7 @@ const App = () => {
         <Route exact path = "/" element = {<Dashboard/>}/>
           <Route path = "/click" element = {<Click/>}/>
           <Route path = "/memory" element = {<Memory/>}/>
+          <Route path = "/math" element = {<MathGame/>}/>
         </Routes>
         <Footer />
    </div>

@@ -11,7 +11,7 @@ export default function Dashboard(){
             <img src = "brain.svg" alt = "brain" width = "150px"/>
             <h1>Brain Train</h1>
             <p>Master these games to improve your cognitive capabilities</p>
-            <a   style = {{"text-decoration": "none"}} href ="#game-page" >
+            <a   style = {{"textDecoration": "none"}} href ="#game-page" >
             <button className= {styles.end_button} id = {styles.start}> Start</button>
             </a>
             
@@ -21,7 +21,7 @@ export default function Dashboard(){
         <div className = {styles.dashboard} id = "game-page">
             <Info img = "time-purple.svg" name = "TimeIt!" desc = "Click to survive" link = "/click"/>
             <Info img = "memory-purple.svg" name = "MemorizeIt!" desc = "Remember the numbers" link = "/memory"/>
-            <Info img = "time-purple.svg" name = "TimeIt!" desc = "Click to survive!" link = "/click"/>
+            <Info img = "math-purple.svg" name = "MathIt!" desc = "Practice mental math" link = "/math"/>
         </div>
         </div>
     );

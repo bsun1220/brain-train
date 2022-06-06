@@ -13,12 +13,10 @@ import Card from "react-bootstrap/Card";
 
 export default function Info(props){
 
-
-
     return(
         <>
         <Card style={{ width: "20rem" }} id = {styles.card}>
-        <a href= {props.link} style = {{"text-decoration": "none"}}>
+        <a href= {props.link} style = {{"textDecoration": "none"}}>
         <Card.Body id = {styles.cardbody}>
          <img src = {props.img} alt = "logo" id = {styles.cardimg}/>
           <Card.Title  id = {styles.cardtitle}>{props.name}</Card.Title>

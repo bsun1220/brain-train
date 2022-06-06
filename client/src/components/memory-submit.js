@@ -8,7 +8,8 @@ export default function Submit(props){
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        props.updateGuess(input);
+        const updated = input.replace(/\s/g, '');
+        props.updateGuess(updated);
         props.parentCall("score");
     };
 

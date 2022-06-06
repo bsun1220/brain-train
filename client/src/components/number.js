@@ -2,7 +2,7 @@ import React, {useEffect, useReducer} from "react";
 import styles from "./global.module.css";
 
 export default function Number(props){
-    
+
     const update_inc = 20/(7 * props.guessNum.length);
     
     const [time, reduceTime] = useReducer(
