@@ -401,7 +401,7 @@ html{
 #mathformtxt{
     height:100%;
     font-size:40px;
-    width:10vw;
+    width: max(100px,10vw);
     font-weight:bold;
     border:none;
     border-radius:5px;
