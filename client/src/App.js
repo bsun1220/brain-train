@@ -1,12 +1,13 @@
 import React from "react";
-import Click from "./components/click_game"
-import Header from "./components/header"
-import Memory from"./components/memory_game"
+import Click from "./components/click_game";
+import Header from "./components/header";
+import Memory from"./components/memory_game";
 // We use Route in order to define the different routes of our application
 import { Route, Routes } from "react-router-dom";
 import Footer from "./components/footer";
-import Dashboard from "./components/dashboard"
-import MathGame from "./components/math_game"
+import Dashboard from "./components/dashboard";
+import MathGame from "./components/math_game";
+import About from "./components/about";
 
 // We import all the components we need in our ap
 
@@ -19,6 +20,7 @@ const App = () => {
           <Route path = "/click" element = {<Click/>}/>
           <Route path = "/memory" element = {<Memory/>}/>
           <Route path = "/math" element = {<MathGame/>}/>
+          <Route path = "/about" element = {<About/>}/>
         </Routes>
         <Footer />
    </div>

@@ -14,7 +14,9 @@ export default function Score(props){
 
     const playAgain = <div id = {styles.play_buttons}>
         <button className = {styles.end_button}> Save Data </button>
-        <button className = {styles.end_button}> Play Again</button>
+        <a href = "/memory">
+            <button className = {styles.end_button}> Play Again</button>
+        </a>
     </div>;
 
 

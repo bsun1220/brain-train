@@ -14,8 +14,13 @@ export default function EndPage(props){
                 </div>
                 <h1> Your average was {get_avg()} ms!</h1>
             <div id = {styles.play_buttons}>
+                <a>
                 <button className = {styles.end_button}> Save Data </button>
+                </a>
+                <a href = "/click">
                 <button className = {styles.end_button}> Play Again</button>
+                </a>
+                
             </div>
             </div>
         </div>

@@ -4,7 +4,7 @@ import styles from "./global.module.css";
 export default function MathRound(props){
 
     const [score, addScore] = useReducer(
-        (number) => number + 1, -1
+        (number) => number + 1, -2
     );
 
     const [guess, setGuess] = useState("0");
@@ -92,8 +92,8 @@ export default function MathRound(props){
     return(
         <div className = {styles.mathpage} id = {styles.mathround}>
             <div id = {styles.mathheader}>
-                <p>{time}</p>
-                <p>Score is {score}</p>
+                <p>Time Left: {time}</p>
+                <p>Score: {score}</p>
             </div>
             <div id = {styles.matheq}>
                 <div id = {styles.stripe}>
@@ -101,9 +101,7 @@ export default function MathRound(props){
                         {eq[0]} {eq[1]} {eq[2]}
                     </p>
                     <form id = {styles.mathform} onSubmit = {handleSubmit} autoComplete="off">
-                        <input id = {styles.mathformtxt} value = {guess} type = "text" onChange = {handleChange}>
-
-                        </input>
+                        <input id = {styles.mathformtxt} value = {guess} type = "text" onChange = {handleChange}/>
                     </form>
                 </div>
             </div>

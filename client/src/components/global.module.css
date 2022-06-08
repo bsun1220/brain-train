@@ -406,6 +406,21 @@ html{
     border:none;
     border-radius:5px;
 }
+
 #mathformtxt:focus{
     outline:none;
+}
+
+.aboutPage{
+    background-color:#5d47c7;
+    min-height:85vh;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    width:100vw;
+    font-family:Arial;
+    display:flex;
+    flex-direction:column;
+    padding:10vh 10vw 10vh 10vw;
+    color:#e6e8f4;
+    line-height:1.5;
 }
