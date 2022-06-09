@@ -5,7 +5,7 @@ export default function About(){
 
     return(
         <div className = {styles.aboutPage}>
-            <h1 style = {{"textAlign":"center", "fontWeight":"bold"}}>Brain-Train</h1>
+            <h1 style = {{"textAlign":"center", "fontWeight":"bold"}} id = {styles.aboutTitle}>Brain-Train</h1>
             <p>
                 Brain-Train is developed by Benny Sun, a sophomore at Duke University majoring in Mathematics,
                 Computer Science, and Finance. Brain-Train is designed to help people practice basic skills
@@ -37,6 +37,14 @@ export default function About(){
                 He eventually works to hope as a quantitative trader or software engineer at companies like Jane Street, Akuna Capital,
                 De Shaw, Optiver, Citadel, or Two Sigma.
             </p>
+            <div className = {styles.rowpic}>
+                <img src = "matheq.svg" width = "100px" alt = "math" id = {styles.row}/>
+                <img src = "time.svg" width = "100px" alt = "math" id = {styles.row}/>
+                <img src = "speed.svg" width = "100px" alt = "math" id = {styles.row}/>
+                <img src = "memory.svg" width = "100px" alt = "math" id = {styles.row}/>
+                <img src = "math.svg" width = "100px" alt = "math" id = {styles.row}/>
+                <img src = "game.svg" width = "100px" alt = "math" id = {styles.row}/>
+            </div>
         </div>
     )
 }

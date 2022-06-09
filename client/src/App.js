@@ -17,10 +17,10 @@ const App = () => {
         <Header />
         <Routes>
         <Route exact path = "/" element = {<Dashboard/>}/>
-          <Route path = "/click" element = {<Click/>}/>
-          <Route path = "/memory" element = {<Memory/>}/>
-          <Route path = "/math" element = {<MathGame/>}/>
-          <Route path = "/about" element = {<About/>}/>
+          <Route exact path = "/click" element = {<Click/>}/>
+          <Route exact path = "/memory" element = {<Memory/>}/>
+          <Route exact path = "/math" element = {<MathGame/>}/>
+          <Route exact path = "/about" element = {<About/>}/>
         </Routes>
         <Footer />
    </div>

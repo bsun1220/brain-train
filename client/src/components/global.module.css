@@ -420,7 +420,29 @@ html{
     font-family:Arial;
     display:flex;
     flex-direction:column;
-    padding:10vh 10vw 10vh 10vw;
+    padding:7vh 10vw 10vh 10vw;
     color:#e6e8f4;
-    line-height:1.5;
+    line-height:1.2;
+}
+
+.rowPic{
+    padding-left:10vw;
+    padding-right:10vw;
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:stretch;
+    flex-direction:column;
+}
+
+#row{
+    margin-right:6.2vw;
+}
+
+#aboutTitle{
+    transition: text-shadow 0.4s ease-out;
+}
+#aboutTitle:hover{
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    transition: text-shadow 0.4s ease-out;
 }
