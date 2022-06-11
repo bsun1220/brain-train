@@ -1,5 +1,5 @@
 
-/*
+
 import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
@@ -8,6 +8,11 @@ const UserSchema = new Schema({
         type:String,
         maxlength:50,
         required:"Enter Username"
+    },
+    password:{
+      type:String,
+      maxlength:50,
+      required:true
     },
     game1:{
         type:[Number],
@@ -29,22 +34,6 @@ const UserSchema = new Schema({
 
 const User = mongoose.model("User", UserSchema);
 
-module.exports = User;*/
-
-
-const mongoose = require("mongoose");
-
-const UserSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true,
-  },
-  age: {
-    type: Number,
-    default: 0,
-  },
-});
-
-const User = mongoose.model("User", UserSchema);
-
 module.exports = User;
+
+
