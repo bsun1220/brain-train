@@ -7,9 +7,6 @@ const CommentSchema = new Schema({
         maxlength:50,
         required:"Enter Username"
     },
-    postId:{
-        type:String
-    },
     content:{
         type:String
     },

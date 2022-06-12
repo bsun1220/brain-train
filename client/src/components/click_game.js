@@ -5,6 +5,7 @@ import RedPage from "./red-page"
 import StartPage from "./start-page"
 import BluePage from "./blue-page";
 import EndPage from "./end-page";
+import Login from "./login";
 
 export default function Click(){
 
@@ -13,6 +14,8 @@ export default function Click(){
         "is_red": false,
         "greenStart":0
     })
+
+    const get_avg = (arr) => Math.floor(arr.reduce((a,b) => a + b, 0)/arr.length);
     
     const [scores, setScore] = useState([]);
     const [round, addRound] = useReducer(
@@ -78,16 +81,23 @@ export default function Click(){
         }
     }
 
+    const [endPage, setEnd] = useState("end");
+
+    const endRef = {
+        "end": <div className = {styles.game}><EndPage data = {scores} setEnd = {setEnd}/></div>,
+        "login":<Login score = {get_avg(scores)} game = {"game1"}/>
+    };
+
     if (round <= 5){
         return(
-            <button className = {styles.game} onClick = {handleClick}>
-                {ref[outcome["page"]]}
-            </button>);
+                <button className = {styles.game} onClick = {handleClick}>
+                    {ref[outcome["page"]]}
+                </button>)
     }
     else{
         return(
-            <div className = {styles.game}>
-                <EndPage data = {scores}/>
+            <div>
+                {endRef[endPage]}
             </div>
         )
     }

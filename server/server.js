@@ -18,6 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use(require("./routes/user"));
+app.use(require("./routes/game"));
 
 mongoose.connect(process.env.ATLAS_URI,{
   useNewUrlParser: true,

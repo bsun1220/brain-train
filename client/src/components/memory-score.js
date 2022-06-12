@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./global.module.css";
+import { useNavigate } from "react-router";
 
 
 export default function Score(props){
@@ -12,10 +13,17 @@ export default function Score(props){
 
     const corrStyle = correct ? styles.memoryCorrect : styles.memoryIncorrect;
 
+    const navigate = useNavigate();
+
+    const handleLogin = (e) => {
+        props.setFinal(level);
+        props.setPage("login");
+    }
+
     const playAgain = <div id = {styles.play_buttons}>
-        <button className = {styles.end_button}> Save Data </button>
+        <button className = {styles.end_button} onClick = {handleLogin}> Save Data </button>
         <a href = "/memory">
-            <button className = {styles.end_button}> Play Again</button>
+            <button className = {styles.end_button} onClick> Play Again</button>
         </a>
     </div>;
 

@@ -22,7 +22,7 @@ const App = () => {
           <Route exact path = "/memory" element = {<Memory/>}/>
           <Route exact path = "/math" element = {<MathGame/>}/>
           <Route exact path = "/about" element = {<About/>}/>
-          <Route exact path = "/login" element = {<Login/>}/>
+          <Route exact path = "/login" element = {<Login score = {32} game = {"game1"}/>}/>
         </Routes>
         <Footer />
    </div>

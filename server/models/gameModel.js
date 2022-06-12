@@ -3,15 +3,20 @@ const Schema = mongoose.Schema;
 
 const GameSchema = new Schema({
     gameId:{
-        type:String
+        type:String,
+        required:true
     },
-    data:{
-        type:[Number],
-        default:[]
+    user:{
+        type:String,
+        required:true
+    },
+    score:{
+        type: Number,
+        required:true
     }
 });
 
 
 const Game = mongoose.model("Game", GameSchema);
 
-module.exports = {Game}
+module.exports = Game;

@@ -4,6 +4,7 @@ import Number from "./number";
 import Score from "./memory-score.js";
 import Submit from "./memory-submit";
 import Max from "./memory-max";
+import Login from "./login";
 
 export default function Memory(){
 
@@ -30,6 +31,8 @@ export default function Memory(){
         setPage(data);
     };
 
+    const [final, setFinal] = useState(0);
+
     const ref = {
         "start":<Start parentCall = {changePage}/>,
         "number":<Number guessNum = {num} parentCall = {changePage}/>,
@@ -41,8 +44,10 @@ export default function Memory(){
             changeNum = {changeNum}
             setPage = {setPage}
             createNum = {createRandomNumber}
+            setFinal = {setFinal}
             />,
-        "max":<Max/>
+        "max":<Max/>,
+        "login":<Login game = {"game2"} score = {final}/>
     }
 
     return (

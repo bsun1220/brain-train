@@ -1,10 +1,9 @@
 const express = require('express');
 const Router = express.Router();
-const mongoose = require("mongoose");
-const { Game } = express("../models/gameModel");
+const Game = require("../models/gameModel");
 
-Router.get("/game/id", async(req, res) =>{
-    const games = await Game.find({"gameID":req.params.id});
+Router.get("/game/:id", async(req, res) =>{
+    const games = await Game.find({"gameId":req.params.id});
     try{
         res.send(games);
     }
@@ -33,3 +32,5 @@ Router.post("/game", async(req, res) =>{
         res.status(500).send(error);
     }
 });
+
+module.exports = Router;
