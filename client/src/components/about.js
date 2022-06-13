@@ -33,7 +33,7 @@ export default function About(){
             <p>
                 If you want to learn more about the developer, his github's username is bsun1220. He is planning on producing
                 multiple other projects including a sports betting arbitrage bot, a full stack exercise tracking application, a 
-                meme-ranking page using the ELO-ranking algorith, and wants to pursue a machine learning and math research experience. 
+                meme-ranking page using the ELO-ranking algorithm, and wants to pursue a machine learning and math research experience. 
                 He eventually works to hope as a quantitative trader or software engineer at companies like Jane Street, Akuna Capital,
                 De Shaw, Optiver, Citadel, or Two Sigma.
             </p>

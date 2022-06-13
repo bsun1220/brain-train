@@ -8,7 +8,7 @@ import Footer from "./components/footer";
 import Dashboard from "./components/dashboard";
 import MathGame from "./components/math_game";
 import About from "./components/about";
-import Login from "./components/login"
+import Stat from "./components/statistics"
 
 // We import all the components we need in our ap
 
@@ -22,7 +22,7 @@ const App = () => {
           <Route exact path = "/memory" element = {<Memory/>}/>
           <Route exact path = "/math" element = {<MathGame/>}/>
           <Route exact path = "/about" element = {<About/>}/>
-          <Route exact path = "/login" element = {<Login score = {32} game = {"game1"}/>}/>
+          <Route exact path = "/stat" element = {<Stat/>}/>
         </Routes>
         <Footer />
    </div>

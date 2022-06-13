@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./global.module.css";
-import { useNavigate } from "react-router";
 
 
 export default function Score(props){
@@ -12,8 +11,6 @@ export default function Score(props){
     const level = actualNum.length;
 
     const corrStyle = correct ? styles.memoryCorrect : styles.memoryIncorrect;
-
-    const navigate = useNavigate();
 
     const handleLogin = (e) => {
         props.setFinal(level);

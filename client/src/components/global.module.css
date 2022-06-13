@@ -197,12 +197,12 @@ footer p{
 }
 
 #frontpage{
-    height:70vh;
+    min-height:70vh;
     color:white;
     font-family:Arial;
     width:100%;
     margin:0px 0px 0px 0px;
-    padding:0px 0px 0px 0px;
+    padding:0px 0px 20px 0px;
     background-color:rgb(40, 134, 196);
     font-weight: bolder;
     display:flex;
@@ -557,4 +557,51 @@ html{
     margin-top:30px;
     display:flex;
     justify-content:center;
+}
+
+#title{
+    padding-top:10px;
+    padding-bottom:0px;
+    text-align: center;
+}
+
+#break{
+    height:2px;
+    width:20vw;
+    margin-inline:auto;
+    padding:0px;
+    margin-top:0px;
+}
+
+.topgame{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    flex-wrap:wrap;
+    padding-top:20px;
+    width:100%;
+}
+
+#leaderbody{
+    text-align:center;
+    padding-top:40px;
+    padding-bottom:50px;
+    font-size:20px;
+    color:black;
+}
+
+#leaderbody p{
+    padding:0px;
+    margin:0px;
+    font-size:15px;
+    text-align:left;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#leadercard{
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:40px;
+    border-style:solid;
+    border-color:rgb(52, 49, 49);
 }

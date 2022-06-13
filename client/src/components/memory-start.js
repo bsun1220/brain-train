@@ -7,7 +7,7 @@ export default function Start({parentCall}){
 
     const handleClick = (e) => {
         e.preventDefault();
-        return parentCall(start);
+        parentCall(start);
     };
 
     return(

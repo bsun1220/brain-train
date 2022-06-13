@@ -13,6 +13,10 @@ const GameSchema = new Schema({
     score:{
         type: Number,
         required:true
+    },
+    date:{
+        type:Date,
+        default:Date.now
     }
 });
 
