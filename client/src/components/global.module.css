@@ -605,3 +605,147 @@ html{
     border-style:solid;
     border-color:rgb(52, 49, 49);
 }
+
+#lookupbutton{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+}
+
+#lookupbutton form{
+    margin:0px;
+    height:30px;
+    padding:0px;
+    
+}
+
+#lookupbutton input{
+    margin-top:0px;
+    padding:10px;
+    width:15rem;
+    height:60px;
+    font-size:20px;
+    transform:translateY(-87px);
+    font-weight:bold;
+    text-align:right;
+    border-radius:5px;
+    border-style: none;
+}
+
+#lookupbutton input:focus{
+    outline:none;
+}
+
+.lookupchart{
+    margin-top:30px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin-left:15vw;
+    margin-right:15vw;
+    flex-wrap:wrap;
+}
+
+.lookupchart h1{
+    width:100%;
+    text-align:center;
+    font-size:20px;
+}
+
+.lookupchart p{
+    margin-top:10px;
+    margin-inline:40px;
+    font-size:15px;
+    text-align:center;
+    width:100%;
+}
+
+#chart{
+    margin-inline:5px;
+    margin-bottom:5px;
+    background-color:black;
+    padding:1px;
+}
+
+.commentsection{
+    width:100%;
+    min-height:30vh;
+    margin:0px 0px 0px 0px;
+    padding:5vh 5vw 5vh 5vw;
+    background-color:#e6e8f4;
+}
+
+#commentsubmit{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+#commentsubmit form{
+    display:flex;
+    flex-direction:column;
+}
+
+#commentsubmit h1{
+    width:100%;
+    text-align:center;
+    margin-bottom:5px;
+}
+
+#commentsubmit p{
+    width:100%;
+    text-align:center;
+    font-size:15px;
+    margin-bottom:70px;
+}
+
+#newcomment{
+    min-height:fit-content;
+    word-wrap: wrap;
+}
+
+#comments{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:50px;
+    
+}
+
+#comment{
+    width:30vw;
+    background-color:white;
+    min-height:50px;
+    border-style:solid;
+    border-color:black;
+    border-radius:3px;
+    word-break: break-all;
+    word-wrap: break-word;
+    margin-block:10px;
+}
+
+#commentheading{
+    display:flex;
+    justify-content:space-between;
+    margin-inline:8px;
+    font-size:12px;
+    margin-top:2px;
+    padding:0px;
+    margin-bottom:0px;
+    height:20px;
+}
+
+#comment hr{
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+
+#commenttext{
+    margin-top:2px;
+    width:95%;
+    margin-inline:auto;
+}

@@ -5,6 +5,7 @@ import Score from "./memory-score.js";
 import Submit from "./memory-submit";
 import Max from "./memory-max";
 import Login from "./login";
+import CommentSection from "./commentsection";
 
 export default function Memory(){
 
@@ -53,6 +54,7 @@ export default function Memory(){
     return (
         <div>
             {ref[[page]]}
+            <CommentSection game = {"game2"}/>
         </div>
     );
 }

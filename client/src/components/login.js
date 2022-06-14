@@ -30,8 +30,8 @@ export default function Login(props){
         e.preventDefault();
         if(user !== "" && password !== ""){
             if(setting === "create"){
-                const existing = await axios.get(`http://localhost:5000/user/${user}`)
-                if(existing.data.length != 0){
+                const existing = await axios.get(`http://localhost:5000/user/${user}`);
+                if(existing.data.length !== 0){
                     setError("User Already Exists");
                 }
                 else{

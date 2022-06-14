@@ -5,6 +5,7 @@ import StartPage from "./start-page"
 import BluePage from "./blue-page";
 import EndPage from "./end-page";
 import Login from "./login";
+import CommentSection from "./commentsection";
 
 export default function Click(){
 
@@ -26,6 +27,7 @@ export default function Click(){
 
     return(<div>
         {ref[page]}
+        <CommentSection game = {"game1"}/>
     </div>)
 }
 

@@ -5,10 +5,15 @@ const CommentSchema = new Schema({
     writer:{
         type:String,
         maxlength:50,
-        required:"Enter Username"
+        required:true
     },
     content:{
-        type:String
+        type:String,
+        required:true
+    },
+    gameId:{
+        type:String,
+        required:true
     },
     start:{
         type:Date,
@@ -19,7 +24,4 @@ const CommentSchema = new Schema({
 
 const Comment = mongoose.model("Comment", CommentSchema);
 
-
-module.exports = {
-    Comment
-}
+module.exports = Comment;
