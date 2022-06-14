@@ -749,3 +749,47 @@ html{
     width:95%;
     margin-inline:auto;
 }
+
+.likesection{
+    width:100%;
+    min-height:30vh;
+    margin:0px 0px 0px 0px;
+    padding:10vh 5vw 10vh 5vw;
+    background-color:aliceblue;
+    text-align:center;
+    justify-content:space-between;
+    display:flex;
+    flex-wrap:wrap;
+    
+}
+
+.radioLike{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.radioLike label{
+    margin:0px;
+    margin-left:10px;
+    padding:0px;
+    font-size:20px;
+    font-weight:100;
+}
+
+.radioLike input{
+    margin-inline:5px;
+    accent-color:#5d47c7;
+    height:30px;
+    margin:0px;
+    padding:0px;
+    
+}
+
+.radiobuttonlike{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    margin-bottom:5px;
+    
+}

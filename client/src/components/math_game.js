@@ -5,6 +5,7 @@ import MathRound from "./math-round";
 import MathScore from "./math-score";
 import Login from "./login";
 import CommentSection from "./commentsection"
+import Like from "./like";
 
 export default function MathGame(){
 
@@ -22,6 +23,7 @@ export default function MathGame(){
     return(
         <div>
             {ref[page]}
+            <Like game = {"game3"}/>
             <CommentSection game = {"game3"}/>
         </div>
     );

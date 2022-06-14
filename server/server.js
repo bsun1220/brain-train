@@ -20,6 +20,7 @@ app.use(bodyParser.json());
 app.use(require("./routes/user"));
 app.use(require("./routes/game"));
 app.use(require("./routes/comment"));
+app.use(require("./routes/like"));
 
 mongoose.connect(process.env.ATLAS_URI,{
   useNewUrlParser: true,

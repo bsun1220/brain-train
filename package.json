@@ -1,0 +1,19 @@
+{
+  "name": "brain-train",
+  "version": "1.0.0",
+  "description": "game",
+  "main": "index.js",
+  "scripts": {
+    "start":"node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bsun1220/brain-train.git"
+  },
+  "author": "Benny Sun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bsun1220/brain-train/issues"
+  },
+  "homepage": "https://github.com/bsun1220/brain-train#readme"
+}

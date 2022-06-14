@@ -5,6 +5,7 @@ import Score from "./memory-score.js";
 import Submit from "./memory-submit";
 import Max from "./memory-max";
 import Login from "./login";
+import Like from "./like";
 import CommentSection from "./commentsection";
 
 export default function Memory(){
@@ -54,6 +55,7 @@ export default function Memory(){
     return (
         <div>
             {ref[[page]]}
+            <Like game = {"game2"}/>
             <CommentSection game = {"game2"}/>
         </div>
     );

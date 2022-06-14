@@ -19,7 +19,7 @@ export default function CommentSection(props){
                 const content = comment.content;
                 const time = comment.start.substring(0,10);
                 list.push(
-                    <Comment comment = {content} writer = {writer} date = {time}/>
+                    <Comment key = {Math.random()} comment = {content} writer = {writer} date = {time}/>
                 )
             setCommentData(list);
             });
@@ -69,7 +69,7 @@ export default function CommentSection(props){
                         value = {newComment}/>
                     
                 </form>
-                <button className = {styles.end_button} 
+                <button className = {styles.end_button}  
                     onClick = {onSubmit}
                     id = {styles.start}
                     >Complete</button>
