@@ -1,19 +1,27 @@
 {
-  "name": "brain-train",
+  "name": "server",
   "version": "1.0.0",
-  "description": "game",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"node server/server.js"
+    "start": "nodemon ./server.js --exec babel-node -e js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bsun1220/brain-train.git"
-  },
-  "author": "Benny Sun",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bsun1220/brain-train/issues"
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongodb": "^4.6.0",
+    "mongoose": "^6.3.6",
+    "nodemon": "^2.0.16"
   },
-  "homepage": "https://github.com/bsun1220/brain-train#readme"
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  }
 }
