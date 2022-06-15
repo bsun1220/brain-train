@@ -26,7 +26,7 @@ app.get('/',(req, res) => {
   res.send("hi");
 });
 
-
+/*
 app.use(require("./routes/user"));
 app.use(require("./routes/game"));
 app.use(require("./routes/comment"));
@@ -51,3 +51,4 @@ db.once("open", function () {
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);});
 
+*/
