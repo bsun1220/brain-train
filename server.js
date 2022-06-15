@@ -15,16 +15,17 @@ if(process.env["PWD"] == '/Users/bennysun/brain-train'){
 
 const port = process.env.PORT || 5000;
 
+/*
 app.use(cors());
 app.use(express.json());
-app.use(require("./routes/record"));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
+*/
 app.get('/',(req, res) => {
   res.send("hi");
 });
+
 
 /*
 app.use(require("./routes/user"));
@@ -46,9 +47,8 @@ db.once("open", function () {
   console.log("Mongoose Connected Successfully");
 });
 
-
+*/
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);});
 
-*/
