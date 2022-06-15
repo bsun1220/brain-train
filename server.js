@@ -19,14 +19,15 @@ app.use(cors());
 app.use(express.json());
 app.use(require("./routes/record"));
 
+/*
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use(bodyParser.json());*/
 
 app.get('/',(req, res) => {
   res.send("hi");
 });
 
-/*
+
 app.use(require("./routes/user"));
 app.use(require("./routes/game"));
 app.use(require("./routes/comment"));
@@ -43,7 +44,7 @@ db.on("error", console.error.bind(console, "connection error: "));
 db.once("open", function () {
   console.log("Mongoose Connected Successfully");
 });
-*/
+
 
 
 app.listen(port, () => {
