@@ -5,7 +5,8 @@ const bodyParser = require("body-parser");
 
 const mongoose = require("mongoose");
 
-require("dotenv").config({ path: "./config.env" });
+//require("dotenv").config({ path: "./config.env" });
+process.env["ATLAS_URI"] = "mongodb+srv://bsun1220:jrabbit11@brain-train.7lspn.mongodb.net/?retryWrites=true&w=majority"
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -18,7 +19,6 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 app.use(require("./routes/record"));
-
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
