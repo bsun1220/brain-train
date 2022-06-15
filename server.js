@@ -4,9 +4,14 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 
 const mongoose = require("mongoose");
-const userModel = require("./models/userModel");
 
 require("dotenv").config({ path: "./config.env" });
+
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 const port = process.env.PORT || 5000;
 
@@ -21,6 +26,7 @@ app.get('/',(req, res) => {
   res.send("hi");
 });
 
+/*
 app.use(require("./routes/user"));
 app.use(require("./routes/game"));
 app.use(require("./routes/comment"));
@@ -31,18 +37,15 @@ mongoose.connect(process.env.ATLAS_URI,{
   useUnifiedTopology:true
 });
 
+
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error: "));
 db.once("open", function () {
   console.log("Mongoose Connected Successfully");
 });
+*/
 
-const dbo = require("./db/conn");
 
 app.listen(port, () => {
-    // perform a database connection when server starts
-    dbo.connectToServer(function (err) {
-      if (err) console.error(err);
-    });
-    console.log(`Server is running on port: ${port}`);
-  });
+    console.log(`Server is running on port: ${port}`);});
+
