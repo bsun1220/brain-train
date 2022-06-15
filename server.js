@@ -8,10 +8,10 @@ const mongoose = require("mongoose");
 //require("dotenv").config({ path: "./config.env" });
 
 
-
+/*
 if(process.env["PWD"] == '/Users/bennysun/brain-train'){
   process.env["ATLAS_URI"] = "mongodb+srv://bsun1220:jrabbit11@brain-train.7lspn.mongodb.net/?retryWrites=true&w=majority"
-}
+}*/
 
 const port = process.env.PORT || 5000;
 
