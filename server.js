@@ -8,27 +8,28 @@ const mongoose = require("mongoose");
 //require("dotenv").config({ path: "./config.env" });
 
 
-/*
+
 if(process.env["PWD"] == '/Users/bennysun/brain-train'){
   process.env["ATLAS_URI"] = "mongodb+srv://bsun1220:jrabbit11@brain-train.7lspn.mongodb.net/?retryWrites=true&w=majority"
-}*/
+}
+
 
 const port = process.env.PORT || 5000;
 
-/*
+
 app.use(cors());
 app.use(express.json());
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-*/
+
 
 app.get('/',(req, res) => {
   res.send("hi");
 });
 
 
-/*
+
 app.use(require("./routes/user"));
 app.use(require("./routes/game"));
 app.use(require("./routes/comment"));
@@ -48,7 +49,7 @@ db.once("open", function () {
   console.log("Mongoose Connected Successfully");
 });
 
-*/
+
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);});
