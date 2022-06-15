@@ -19,9 +19,9 @@ app.use(cors());
 app.use(express.json());
 app.use(require("./routes/record"));
 
-/*
+
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());*/
+app.use(bodyParser.json());
 
 app.get('/',(req, res) => {
   res.send("hi");
@@ -33,7 +33,9 @@ app.use(require("./routes/game"));
 app.use(require("./routes/comment"));
 app.use(require("./routes/like"));
 
-mongoose.connect(process.env.ATLAS_URI,{
+const ATLAS_URI = "mongodb+srv://bsun1220:jrabbit11@brain-train.7lspn.mongodb.net/?retryWrites=true&w=majority"
+
+mongoose.connect(ATLAS_URI,{
   useNewUrlParser: true,
   useUnifiedTopology:true
 });
