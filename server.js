@@ -8,12 +8,6 @@ const mongoose = require("mongoose");
 //require("dotenv").config({ path: "./config.env" });
 process.env["ATLAS_URI"] = "mongodb+srv://bsun1220:jrabbit11@brain-train.7lspn.mongodb.net/?retryWrites=true&w=majority"
 
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
-
 const port = process.env.PORT || 5000;
 
 app.use(cors());
@@ -27,7 +21,7 @@ app.get('/',(req, res) => {
   res.send("hi");
 });
 
-
+/*
 app.use(require("./routes/user"));
 app.use(require("./routes/game"));
 app.use(require("./routes/comment"));
@@ -52,3 +46,4 @@ db.once("open", function () {
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);});
 
+*/
